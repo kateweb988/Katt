@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>М-КАТ</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="icon" href="/img/favicon.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body class="body">
+	<div class="body-wrap">
+		<div class="menu-btn2">
+			<img src="/img/a2.svg" alt="" class="svg">
+		</div>
+		<header class="header" id="header">
+			<nav class="nav">
+				<div class="container">
+					<div class="nav__box d-flex">
+						<a href="main.html" class="nav__logo">
+							<img src="/img/logo.svg" alt="">
+							<p>
+								Прием и
+								удаление
+								катализаторов
+							</p>
+						</a>
+						<div class="nav__content">
+							<div class="nav__top d-flex">
+								<div class="nav__time d-flex">
+									<img src="/img/a1.svg" alt="">
+									<p>
+										Время работы: <br>
+										Круглосуточно 24/7
+									</p>
+								</div>
+								<a href="#" class="nav__what btn">
+									<span> Написать в ватсап</span> <img src="/img/a2.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="nav__telegram btn">
+									<span> Написать в телеграм</span> <img src="/img/a3.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="nav__phone btn">
+									Заказать звонок <img src="/img/a4.svg" alt="" class="svg">
+								</a>
+							</div>
+							<div class="nav__bottom d-flex">
+								<ul class="nav__list d-flex">
+									<li>
+										<a href="#">
+											Адреса сервисов
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Наши работы
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											О нас
+										</a>
+									</li>
+								</ul>
+								<a href="tel:+79104420505" class="nav__tel">
+									+7 (910) 442-05-05
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="menu-btn" id="menu-btn">
+			</div>
+			<div class="menu">
+				<ul class="nav__list d-flex">
+					<li>
+						<a href="#">
+							Адреса сервисов
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Наши работы
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							О нас
+						</a>
+					</li>
+				</ul>
+				<div class="nav__time d-flex">
+					<img src="/img/a1.svg" alt="">
+					<p>
+						Время работы: <br>
+						Круглосуточно 24/7
+					</p>
+				</div>
+				<a href="#" class="nav__what btn">
+					Написать в ватсап <img src="/img/a2.svg" alt="" class="svg">
+				</a>
+				<a href="#" class="nav__telegram btn">
+					Написать в телеграм <img src="/img/a3.svg" alt="" class="svg">
+				</a>
+			</div>
+			<div class="container">
+				<div class="header__box d-flex">
+					<img src="/img/header.png" alt="" class="header__pic">
+					<div class="header__content">
+						<h1>
+							БЕСПЛАТНО
+						</h1>
+						<ul>
+							<li>
+								Удаляем катализатор
+							</li>
+							<li>
+								Устанавливаем пламегаситель
+							</li>
+							<li>
+								Делаем прошивку ЕВРО-2
+							</li>
+							<li>
+								Чип-тюнинг (повышает мощность авто до 15%)
+							</li>
+							<li>
+								Доплата Вам до 120.000 руб.
+							</li>
+						</ul>
+						<div class="header__item d-flex">
+							<img src="/img/a5.svg" alt="">
+							<p>
+								От звонка до удаления 1,5 часа
+							</p>
+						</div>
+						<div class="header__item d-flex">
+							<img src="/img/a6.svg" alt="">
+							<p>
+								Гарантия на все работы 24 месяца
+							</p>
+						</div>
+					</div>
+					<div class="header__wrap">
+						<p class="header__name">
+							Запись на <span>бесплатное </span> удаление катализатора
+						</p>
+						<form action="success.php" class="header__form js-form" id="popupResult" method="post">
+							<input type="text" name="model" required="" placeholder="Марка авто"
+								class="order__input form__field">
+							<input type="text" name="year" required="" placeholder="Пробег" class="order__input form__field">
+							<input type="tel" name="tel" required="" placeholder="Номер телефона"
+								class="order__input tel form__field">
+
+							<button class="header__button btn" data-submit>
+								Отправить на расчет
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="header__bottom d-flex">
+					<div class="header__el">
+						<div class="header__flex d-flex">
+							<img src="/img/b1.svg" alt="">
+							<p>
+								Комплекс всех <br> сопутствующих работ <br> <span>БЕСПЛАТНО</span>
+							</p>
+						</div>
+						<p class="header__text">
+							Полная диагностика и очистка выхлопной системы, обновление ПО с отключением контроля катализатора
+						</p>
+					</div>
+					<div class="header__el">
+						<div class="header__flex d-flex">
+							<img src="/img/b2.svg" alt="">
+							<p>
+								Без ошибок <br>
+								и масложора
+							</p>
+						</div>
+						<p class="header__text">
+							Установим двухслойный нержавеющий пламегаситель. Используем только качественные и проверенные
+							прошивки евро 2
+						</p>
+					</div>
+					<div class="header__el">
+						<div class="header__flex d-flex">
+							<img src="/img/b3.svg" alt="">
+							<p>
+								Работаем со всеми <br> марками авто
+							</p>
+						</div>
+						<p class="header__text">
+							Принимаем все виды катализаторов от отечественных и иностранных автомобилей, кроме промышленных
+							агрегатов.
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="calc" id="calc">
+			<div class="container">
+				<div class="calc__box">
+					<img src="/img/calc.png" alt="" class="calc__bg">
+					<h2>
+						Получи самые выгодные условия на свой <br>
+						катализатор <span> ответь всего на 4 вопроса</span>
+					</h2>
+					<form action="success.php" class="calc__form js-form" id="popupResult" method="post">
+						<div class="calc__elem calc__one">
+							<p class="calc__name">
+								· Ты хочешь продать или удалить катализатор?
+							</p>
+							<div class="calc__flex d-flex">
+								<div class="calc__item">
+									<img src="/img/b4.svg" alt="">
+									<input class="form-check-input custom-checkbox" type="radio" name="formKitchen" id="form1"
+										value="Я хочу продать катализатор">
+									<label class="form-check-label " for="form1">
+										Я хочу <span> продать </span><br>
+										катализатор
+									</label>
+								</div>
+								<div class="calc__item">
+									<img src="/img/b5.svg" alt="">
+									<input class="form-check-input custom-checkbox" type="radio" name="formKitchen" id="form2"
+										value="Я хочу удалить катализатор">
+									<label class="form-check-label " for="form2">
+										Я хочу <span>удалить</span> <br>
+										катализатор
+									</label>
+								</div>
+							</div>
+							<div class="calc__bottom d-flex">
+								<p class="calc__choose">
+									Выбери ответ и нажми
+								</p>
+								<div class="calc__buttons d-flex">
+									<div class="calc__prev btn" style="display: none;">
+										<img src="/img/arr.svg" alt="" class="svg"> Назад
+									</div>
+									<button class="calc__btn calc__btn_one btn">Далее <img src="/img/arr.svg" alt=""
+											class="svg"></button>
+								</div>
+							</div>
+							<p class="calc__sub">
+								Конечная стоимость катализаторов устанавливается только после спектрального анализа. Наши
+								специалисты могут приехать к Вам бесплатно для оценки стоимости в любое время и место
+							</p>
+						</div>
+						<div class="calc__elem calc__two" style="display: none;">
+							<p class="calc__name">
+								· Ты хочешь продать или удалить катализатор?
+							</p>
+							<div class="def__select">
+								<div id="wapper">
+									<div class="style1">
+										<select class="select">
+											<option value="1">Сварочные работы по автомобилям</option>
+											<option value="2">Ремонт глушителя</option>
+											<option value="3">Замена резонатора</option>
+											<option value="3">Замена банки глушителя</option>
+											<option value="3">Замена фланца</option>
+											<option value="3">Замена демпфера</option>
+											<option value="3">Замена графитового кольца глушителя</option>
+											<option value="3">Замена части выхлопной системы (трассы)</option>
+											<option value="3">Замена катализатора на пламегаситель</option>
+										</select>
+									</div>
+									<div id="event-change"></div>
+								</div>
+							</div>
+							<div class="calc__bottom d-flex">
+								<p class="calc__choose">
+									Выбери ответ и нажми
+								</p>
+								<div class="calc__buttons d-flex">
+									<div class="calc__prev btn">
+										<img src="/img/arr.svg" alt="" class="svg"> Назад
+									</div>
+									<button class="calc__btn calc__btn_two btn">Далее <img src="/img/arr.svg" alt=""
+											class="svg"></button>
+								</div>
+							</div>
+							<p class="calc__sub">
+								Конечная стоимость катализаторов устанавливается только после спектрального анализа. Наши
+								специалисты могут приехать к Вам бесплатно для оценки стоимости в любое время и место
+							</p>
+						</div>
+						<div class="calc__elem calc__three" style="display: none;">
+							<p class="calc__name">
+								· Пожалуйста, укажите данные вашего автомобиля:
+							</p>
+							<div class="header__form d-flex">
+								<input type="text" name="model" required="" placeholder="Марка авто"
+									class="order__input form__field">
+								<input type="text" name="year" required="" placeholder="Пробег"
+									class="order__input form__field">
+								<input type="text" name="year" required="" placeholder="Пробег"
+									class="order__input form__field">
+							</div>
+							<div class="calc__bottom d-flex">
+								<p class="calc__choose">
+									Выбери ответ и нажми
+								</p>
+								<div class="calc__buttons d-flex">
+									<div class="calc__prev btn">
+										<img src="/img/arr.svg" alt="" class="svg"> Назад
+									</div>
+									<button class="calc__btn calc__btn_three btn">Далее <img src="/img/arr.svg" alt=""
+											class="svg"></button>
+								</div>
+							</div>
+							<p class="calc__sub">
+								Конечная стоимость катализаторов устанавливается только после спектрального анализа. Наши
+								специалисты могут приехать к Вам бесплатно для оценки стоимости в любое время и место
+							</p>
+						</div>
+						<div class="calc__elem calc__four" style="display: none;">
+							<div class="header__form  d-flex">
+								<input type="text" name="name" required="" placeholder="Имя" class="order__input form__field">
+								<input type="tel" name="tel" required="" placeholder="+7 (---) --- -- --"
+									class="order__input tel form__field">
+								<!-- <div id="wapper">
+									<div class="style1">
+										<select class="select">
+											<option value="1">Ул. 9 Соколиной горы 8с8</option>
+											<option value="2">Ул. 9 Парковая</option>
+											<option value="3">Ул. Нижние поля 29с1</option>
+										</select>
+									</div>
+									<div id="event-change"></div>
+								</div> -->
+							</div>
+							<div class="calc__buttons d-flex">
+								<div class="calc__prev btn">
+									<img src="/img/arr.svg" alt="" class="svg"> Назад
+								</div>
+								<button class="calc__four_button btn d-flex" data-submit>
+									<p>
+										Получить просчёт
+									</p>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+		</section>
+		<section class="rev" id="rev">
+			<div class="container">
+				<div class="rev__box">
+					<div class="rev__top d-flex">
+						<h2>
+							Нам доверяют
+						</h2>
+						<div class="rev__arrows d-flex">
+							<div class="swiper-button-prev2 arr">
+								<img src="/img/left.svg" alt="">
+								<img src="/img/right.svg" alt="">
+							</div>
+							<div class="swiper-button-next2 arr">
+								<img src="/img/left.svg" alt="">
+								<img src="/img/right.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="rev__yandex">
+						<div class="rev__flex d-flex">
+							<img src="/img/yandex.svg" alt="">
+							<p class="rev__mark">
+								4,9
+							</p>
+							<div class="rev__stars d-flex">
+								<img src="/img/star.svg" alt="">
+								<img src="/img/star.svg" alt="">
+								<img src="/img/star.svg" alt="">
+								<img src="/img/star.svg" alt="">
+								<img src="/img/star.svg" alt="">
+							</div>
+						</div>
+						<p class="rev__sub">Рейтинг организации в Яндексе</p>
+					</div>
+					<div class="swiper2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava1.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Адександр Чумак
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 12 июля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Всё отлично, большое спасибо! Посоветую вас друзьям, остался очень доволен.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava1.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Адександр Чумак
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 12 июля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Всё отлично, большое спасибо! Посоветую вас друзьям, остался очень доволен.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava3.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Леонид Борытин
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 21 мая 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Хорошие ребята, мастера знают своё дело. Остался доволен работой, цена тоже порадовала.
+										Вежливые работники, всё объяснили.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava2.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Иван Рагулин
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											29 апреля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Сервис зачёт. Быстро, четко, без подводных камней. Если что, обращусь к вам ещё раз, от
+										души, пацаны.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava2.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Иван Рагулин
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											29 апреля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Сервис зачёт. Быстро, четко, без подводных камней. Если что, обращусь к вам ещё раз, от
+										души, пацаны.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava2.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Адександр Чумак
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 29 июля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Хочу выразить благодарность парням, сделали всё на высшем уровне, класс!
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava1.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Адександр Чумак
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 12 июля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Всё отлично, большое спасибо! Посоветую вас друзьям, остался очень доволен.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava1.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Адександр Чумак
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 12 июля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Всё отлично, большое спасибо! Посоветую вас друзьям, остался очень доволен.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava4.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Никита Жилин
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											16 марта 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Всё ок, мне понравилось, спасибо. Дали гарантию, я рад.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava2.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Адександр Чумак
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 29 июля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Хочу выразить благодарность парням, сделали всё на высшем уровне, класс!
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava3.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Леонид Борытин
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 21 мая 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Хорошие ребята, мастера знают своё дело. Остался доволен работой, цена тоже порадовала.
+										Вежливые работники, всё объяснили.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava2.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Иван Рагулин
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											29 апреля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Сервис зачёт. Быстро, четко, без подводных камней. Если что, обращусь к вам ещё раз, от
+										души, пацаны.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava4.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Никита Жилин
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											16 марта 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Всё ок, мне понравилось, спасибо. Дали гарантию, я рад.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava1.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Адександр Чумак
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 12 июля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Всё отлично, большое спасибо! Посоветую вас друзьям, остался очень доволен.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava1.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Адександр Чумак
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 12 июля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Всё отлично, большое спасибо! Посоветую вас друзьям, остался очень доволен.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava3.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Леонид Борытин
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											· 21 мая 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Хорошие ребята, мастера знают своё дело. Остался доволен работой, цена тоже порадовала.
+										Вежливые работники, всё объяснили.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide d-flex">
+								<img src="/img/ava2.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Иван Рагулин
+									</p>
+									<div class="rev__info d-flex">
+										<img src="/img/star.svg" alt="">
+										<p class="rev__num">5</p>
+										<p class="rev__data">
+											29 апреля 2023
+										</p>
+									</div>
+									<p class="rev__text">
+										Сервис зачёт. Быстро, четко, без подводных камней. Если что, обращусь к вам ещё раз, от
+										души, пацаны.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="plus" id="plus">
+			<div class="container">
+				<h2>
+					Плюсы удаления катализатора
+				</h2>
+				<div class="plus__box d-flex">
+					<ul class="plus__list">
+						<li>
+							Уменьшится расход топлива
+						</li>
+						<li>
+							Увеличится мощность и ресурс двигателя
+						</li>
+						<li>
+							Более плавное переключение передач АКПП
+						</li>
+						<li>
+							Улучшится динамика авто
+						</li>
+						<li>
+							Сократится время разгона
+						</li>
+						<li>
+							Педаль газа станет более отзывчивой
+						</li>
+						<li>
+							Увеличение срока службы Вашего автомобиля
+						</li>
+					</ul>
+					<div class="plus__wrap d-flex">
+						<div class="plus__item">
+							<p class="plus__num">
+								+12%
+							</p>
+							<p class="plus__text">
+								Увеличится мощность атмосферного двигателя
+							</p>
+						</div>
+						<div class="plus__item">
+							<p class="plus__num">
+								+20%
+							</p>
+							<p class="plus__text">
+								Увеличится мощность бензинового турбомотора
+							</p>
+						</div>
+						<div class="plus__item">
+							<p class="plus__num">
+								+40%
+							</p>
+							<p class="plus__text">
+								Увеличится мощность турбодизеля
+							</p>
+						</div>
+						<div class="plus__item">
+							<p class="plus__num">
+								-5-7 л
+							</p>
+							<p class="plus__text">
+								Уменьшение расхода топлива
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="plus__block">
+					<picture class="sum__pic">
+						<source srcset="/img/pluss.png" media="(max-width: 600px)">
+						<img src="/img/plus.png" alt="">
+					</picture>
+					<p>
+						<span>Бесплатно</span> заменим масло в Вашем авто при удалении <br> катализатора до конца месяца!
+					</p>
+					<form action="success.php" class="header__form js-form" id="popupResult" method="post">
+						<input type="text" name="name" required="" placeholder="Имя" class="form__field">
+						<input type="tel" name="tel" required="" placeholder="Номер телефона"
+							class="order__input tel form__field">
+						<button class="header__button btn" data-submit>
+							Записаться
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="del" id="del">
+			<div class="container">
+				<h2>
+					Пора <span>удалять катализатор</span>, если
+				</h2>
+				<div class="del__box d-flex">
+					<ul>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								Увеличился расход <span>топлива</span>
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								Увеличился расход <span>масла</span>
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								Ухудшилась <span>динамика</span>
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								<span>Замедлился отклик</span> педали газа
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								Перегревается <span>двигатель</span>
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								Изменились звуки <span>выхлопной системы</span>
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								<span>Падает мощность</span> двигателя
+							</p>
+						</li>
+					</ul>
+					<img src="/img/del.png" alt="" class="del__pic">
+					<ul>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								Активируется лампочка <span>Check Engin</span>
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								Автоматика сигнализирует об <span>ошибках</span> Р0430 (Р0420)
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								<span>Дребезжание</span> под водительским сидением
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								Выхлопные газы имеют <span>ядовитый запах</span>
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								Стрелка тахометра <span>«дёргается»</span> на холостом ходу
+							</p>
+						</li>
+						<li>
+							<img src="/img/del.svg" alt="">
+							<p>
+								АКПП <span>неровно</span> переключает передачи
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="info" id="info">
+			<div class="container">
+				<h2>
+					Немного о нас и наших сервисах
+				</h2>
+				<div class="info__box d-flex">
+					<div class="info__content">
+						<p>
+							Сеть профессиональных современных сервисов по удалению катализаторов собрала лучший коллектив из
+							опытных и компетентных ребят, которые отлично знают свое дело. Мы смело даем гарантию 24 мес на все
+							работы, т.к. уверены в высоком качестве оказываемых услуг
+						</p>
+						<p>
+							<span>Наша работа полностью бесплатна и выгодна для Вас, потому что</span>
+							Благодаря прямому сотрудничеству с заводами по утилизации и переработке отходов, снятые
+							катализаторы мы утилизируем и получаем за это выгодные дотации по специальной программе,
+							компенсируя стоимость работ
+						</p>
+					</div>
+					<img src="/img/info1.png" alt="">
+				</div>
+				<div class="info__top d-flex">
+					<h2>
+						Успешно удалили и выкупили <br>
+						<span>более 3000 катализаторов</span>
+					</h2>
+					<div class="rev__arrows d-flex">
+						<div class="swiper-button-prev3 arr">
+							<img src="/img/left2.svg" alt="">
+							<img src="/img/right2.svg" alt="">
+						</div>
+						<div class="swiper-button-next3 arr">
+							<img src="/img/left2.svg" alt="">
+							<img src="/img/right2.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="swiper3">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="/img/info2.png" alt="">
+							<div class="info__flex d-flex">
+								<p class="info__sub">
+									Удаление катализатора + какая-то услуга
+								</p>
+								<p class="info__data">
+									20.05.2023
+								</p>
+							</div>
+							<p class="info__name">
+								Audi TT Rs (1G)
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="/img/info3.png" alt="">
+							<div class="info__flex d-flex">
+								<p class="info__sub">
+									Удаление катализатора + какая-то услуга
+								</p>
+								<p class="info__data">
+									01.04.2023
+								</p>
+							</div>
+							<p class="info__name">
+								honda prelude
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="/img/info4.png" alt="">
+							<div class="info__flex d-flex">
+								<p class="info__sub">
+									Удаление катализатора + какая-то услуга
+								</p>
+								<p class="info__data">
+									16.04.2023
+								</p>
+							</div>
+							<p class="info__name">
+								kia rio
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="/img/info2.png" alt="">
+							<div class="info__flex d-flex">
+								<p class="info__sub">
+									Удаление катализатора + какая-то услуга
+								</p>
+								<p class="info__data">
+									20.05.2023
+								</p>
+							</div>
+							<p class="info__name">
+								Audi TT Rs (1G)
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="/img/info3.png" alt="">
+							<div class="info__flex d-flex">
+								<p class="info__sub">
+									Удаление катализатора + какая-то услуга
+								</p>
+								<p class="info__data">
+									01.04.2023
+								</p>
+							</div>
+							<p class="info__name">
+								honda prelude
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="/img/info4.png" alt="">
+							<div class="info__flex d-flex">
+								<p class="info__sub">
+									Удаление катализатора + какая-то услуга
+								</p>
+								<p class="info__data">
+									16.04.2023
+								</p>
+							</div>
+							<p class="info__name">
+								kia rio
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="why" id="why">
+			<div class="container">
+				<h2>
+					Почему <span>нужно удалять катализаторы вовремя</span> <br>
+					и не ждать пока они развалятся?
+				</h2>
+				<div class="why__box d-flex">
+					<img src="/img/why.png" alt="" class="why__pic">
+					<div class="why__content">
+						<div class="why__item">
+							<img src="/img/w1.svg" alt="">
+							<p class="why__name">
+								(Check engine) загорелась лампочка "Проверьте двигатель" 
+							</p>
+							<p class="why__text">
+								Чаще всего катализатор забивается и выходит из строя на пробеге в 100–150 тысяч километров.
+								Однако водители сталкиваются с этой поломкой гораздо чаще — после 60–70 тысяч километров
+								пробега.
+							</p>
+						</div>
+						<div class="why__item">
+							<img src="/img/w2.svg" alt="">
+							<p class="why__name">
+								Автомобиль перестал автоматически запускаться
+							</p>
+							<p class="why__text">
+								Если катализатор вышел из строя или забился выхлопные газы перестают очищаться. Затруднённый
+								выхлоп напрямую влияет на
+								запуск двигателя.
+							</p>
+						</div>
+						<div class="why__item">
+							<img src="/img/w3.svg" alt="">
+							<p class="why__name">
+								Снижение мощности мотора, машина начнет хуже разгоняться
+							</p>
+							<p class="why__text">
+								При разрушенном или забитом катализаторе, автомобиль перестает адекватно реагировать на нажатие
+								педали газа. В некоторых случая есть ощутимый провал в оборотах
+							</p>
+						</div>
+						<div class="why__item">
+							<img src="/img/w4.svg" alt="">
+							<p class="why__name">
+								Повысился уровень шума из выхлопной системы
+							</p>
+							<p class="why__text">
+								При сильно разрушенном катализаторе выхлопные газы начинаю беспрепятственно выходить, из-за чего
+								может поменяться звук
+								выхлопа 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="item" id="item">
+			<div class="container">
+				<h2>
+					Удаляем катализатор на всех марках автомобилей
+				</h2>
+				<div class="item__row d-flex">
+					<div class="item__el">
+						<img src="/img/m1.png" alt="">
+						<p>
+							AUDI
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m2.png" alt="">
+						<p>
+							BMW
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m3.png" alt="">
+						<p>
+							HONDA
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m4.png" alt="">
+						<p>
+							hyundai
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m5.png" alt="">
+						<p>
+							INFINITI
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m6.png" alt="">
+						<p>
+							JEEP
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m7.png" alt="">
+						<p>
+							KIA
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m8.png" alt="">
+						<p>
+							LAND ROVER
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m9.png" alt="">
+						<p>
+							LEXUS
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m10.png" alt="">
+						<p>
+							MAZDA
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m11.png" alt="">
+						<p>
+							MERCEDEC - BENZ
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m12.png" alt="">
+						<p>
+							mitsubishi
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m13.png" alt="">
+						<p>
+							NISSAN
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m14.png" alt="">
+						<p>
+							OPEL
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m15.png" alt="">
+						<p>
+							porsche
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m16.png" alt="">
+						<p>
+							toyota
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m17.png" alt="">
+						<p>
+							volkswagen
+						</p>
+					</div>
+					<div class="item__el">
+						<img src="/img/m18.png" alt="">
+						<p>
+							VOLVO
+						</p>
+					</div>
+				</div>
+				<p class="item__sub">
+					И другие
+				</p>
+				<a href="#" class="item__btn btn">
+					Узнать стоимость своего катализатора
+				</a>
+				<h2>
+					Бесплатно удалим катализатор, установим <br>
+					прошивку ЕВРО-2, доплатим деньги
+				</h2>
+				<div class="item__wrap">
+					<div class="item__flex d-flex">
+						<img src="/img/m.png" alt="" class="item__pic">
+						<div class="item__content">
+							<p class="item__title">
+								<span>Покупаем катализаторы</span> в Москве и
+								Московской области
+							</p>
+							<p class="item__text">
+								Прием катализаторов в Москве остается довольно популярной услугой,
+								которая помогает эффективно избавиться от агрегата без вреда для
+								окружающей среды. Перед тем, как разобраться с причинами удаления
+								этого компонента, важно понять, какие функции он выполняет
+							</p>
+							<p class="item__text">
+								Каталитический нейтрализатор выхлопных газов – важный элемент транспортного средства с мотором
+								внутреннего сгорания. Эта деталь позволяет уменьшить негативные последствия эксплуатации
+								автомобиля, за счет очищения выбросов от вредных компонентов. Несмотря на положительную функцию
+								этой детали, она может доставлять владельцам машин много проблем, например, привести силовой
+								агрегат в полную неисправность
+							</p>
+							<div class="item__block d-flex">
+								<a href="#" class="nav__what btn">
+									Написать в ватсап <img src="/img/a2.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="item__link btn">
+									Узнать все условия
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="item__flex d-flex">
+						<img src="/img/mm.png" alt="" class="item__pic">
+						<div class="item__content">
+							<p class="item__title">
+								<span> Зачем удалять</span> катализатор?
+							</p>
+							<p class="item__text">
+								<span>Вероятна поломка двигателя</span> <br>
+								Вследствие разрушения катализатора его частицы могут попасть в камеру сгорания и оставить
+								задиры, что потребует капитального ремонта двигателя.
+							</p>
+							<p class="item__text">
+								<span>Вероятна поломка выхлопной системы</span> <br>
+								При засорении сот катализатора может образоваться обратный выхлоп в связи с низкой проходимостью
+								газов и привести к поломке всей системы.
+							</p>
+							<div class="item__block d-flex">
+								<a href="#" class="nav__what btn">
+									Написать в ватсап <img src="/img/a2.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="item__link btn">
+									Узнать все условия
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="work" id="work">
+			<div class="container">
+				<h2>
+					С этими катализаторами <span>мы не работаем</span> <br>
+					ни при каких условиях
+				</h2>
+				<div class="work__box d-flex">
+					<picture class="sum__pic">
+						<source srcset="/img/ww2.png" media="(max-width: 600px)">
+						<img src="/img/w.png" alt="" class="work__pic">
+					</picture>
+					<div class="work__content">
+						<div class="work__item">
+							<img src="/img/work1.svg" alt="">
+							<p class="work__name">
+								Сильно разрушенные металлические катализаторы
+							</p>
+							<p class="work__text">
+								Мы не принимаем и не удаляем сильно разрушенные металлические катализаторы.
+							</p>
+						</div>
+						<div class="work__item">
+							<img src="/img/work2.svg" alt="">
+							<p class="work__name">
+								Катализаторы от грузовых автомобилей
+							</p>
+							<p class="work__text">
+								Мы не принимаем катализаторы от грузовых автомобилей в любом виде и состоянии .
+							</p>
+						</div>
+						<div class="work__item">
+							<img src="/img/work3.svg" alt="">
+							<p class="work__name">
+								Катализаторы с мочевиной
+							</p>
+							<p class="work__text">
+								Мы не принимаем катализаторов с системой AD-BLUE, на всех дизельных автомобилях.
+							</p>
+						</div>
+						<div class="work__item">
+							<img src="/img/work4.svg" alt="">
+							<p class="work__name">
+								Грязные катализаторы
+							</p>
+							<p class="work__text">
+								Мы не принимаем катализаторы имеющие сильные загрязнения (масло, различные жидкости)
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<h2>
+					Записывайтесь на удаление катализатора
+				</h2>
+			</div>
+			<div id="map"></div>
+			<a href="#" class="contacts__link">
+				Построить маршрут до сервиса
+			</a>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="nav__box d-flex">
+					<a href="main.html" class="nav__logo">
+						<img src="/img/logo.svg" alt="">
+						<p>
+							Прием и
+							удаление
+							катализаторов
+						</p>
+					</a>
+					<div class="nav__content">
+						<div class="nav__top d-flex">
+							<div class="nav__time d-flex">
+								<img src="/img/a11.svg" alt="">
+								<p>
+									Время работы: <br>
+									Круглосуточно 24/7
+								</p>
+							</div>
+							<a href="#" class="nav__what btn">
+								<span> Написать в ватсап</span> <img src="/img/a2.svg" alt="" class="svg">
+							</a>
+							<a href="#" class="nav__telegram btn">
+								<span> Написать в телеграм</span> <img src="/img/a3.svg" alt="" class="svg">
+							</a>
+							<a href="#" class="nav__phone btn">
+								Заказать звонок <img src="/img/a44.svg" alt="" class="svg">
+							</a>
+						</div>
+						<div class="nav__bottom d-flex">
+							<ul class="nav__list d-flex">
+								<li>
+									<a href="#">
+										Адреса сервисов
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Наши работы
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										О нас
+									</a>
+								</li>
+							</ul>
+							<a href="tel:+79104420505" class="nav__tel">
+								+7 (910) 442-05-05
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div style="display:none;">
+			<div class="box-modal" id="popup-call">
+				<div class="popup-call__box">
+					<div class="box-modal__close articmodal-close">
+						<img src="/img/close.svg" alt="" class="svg">
+					</div>
+					<div class="popup__wrap">
+						<h2>
+							Оставьте нам свои контакты и мы с вами свяжемся
+						</h2>
+						<form action="success.php" class="header__form js-form" id="popupResult" method="post">
+							<input type="text" name="name" required="" placeholder="Имя" class="form__field">
+							<input type="tel" name="tel" required="" placeholder="Номер телефона"
+								class="order__input tel form__field">
+							<button class="header__button btn" data-submit>
+								Отправить
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="display:none;">
+			<div class="box-modal" id="popup-thank">
+				<div class="popup-call__box">
+					<div class="popup__wrap">
+						<p class="thank__title">
+							Спасибо!
+						</p>
+						<p class="thank__text">
+							Специалист свяжется с Вами в <br> ближайшее время.
+						</p>
+						<div class="box-modal__close articmodal-close">
+							<img src="/img/close.svg" alt="" class="svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map("map", {
+				// Центр карты, указываем коордианты
+				center: [60.950247, 29.144213],
+				// Масштаб, тут все просто
+				zoom: 13,
+				// Отключаем все элементы управления
+				controls: []
+			});
+
+			var myGeoObjects = [];
+
+			// Наша метка, указываем коордианты
+			myGeoObjects = new ymaps.Placemark([60.950247, 29.144213], {
+				balloonContentBody: 'Удаление катализаторов ',
+			}, {
+				iconLayout: 'default#image',
+				// Путь до нашей картинки
+				iconImageHref: '/img/map.svg',
+				// Размер по ширине и высоте
+				iconImageSize: [41, 63],
+				// Смещение левого верхнего угла иконки относительно
+				// её «ножки» (точки привязки).
+				iconImageOffset: [-35, -35]
+			});
+
+			var clusterer = new ymaps.Clusterer({
+				clusterDisableClickZoom: false,
+				clusterOpenBalloonOnClick: false,
+			});
+
+			clusterer.add(myGeoObjects);
+			myMap.geoObjects.add(clusterer);
+			// Отлючаем возможность изменения масштаба
+			myMap.behaviors.disable('scrollZoom');
+
+		}
+	</script>
+	<!-- <script>
+			document.querySelector('.menu-btn').addEventListener('click', () => {
+				document.querySelector('.body').classList.toggle('three');
+			});
+		</script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.js"></script>
+	<script src="js/all.js"></script>
+</body>
+
+</html>

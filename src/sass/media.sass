@@ -1,0 +1,564 @@
+@media screen and (max-width: 1199px)
+   .nav__content .nav__what, .nav__content .nav__telegram
+      width: 30px !important
+      height: 30px !important
+      border-radius: 50%
+      padding: 0
+      span 
+         display: none
+      .svg 
+         margin-left: 0
+         width: 55%
+   .menu-btn2.active
+      right: 80px
+      height: 52px !important
+   .menu-btn 
+      width: 33px
+      height: 20px
+      position: absolute
+      right: 25px
+      top: 56px
+      z-index: 11
+      overflow: hidden
+      background: url(/img/burger.svg) no-repeat
+   .menu 
+      position: fixed
+      top: 0
+      left: inherit
+      right: 0
+      width: 70%
+      height: 100%
+      padding: 166px 20px 
+      background: #0A090E
+      transform: translateX(100%)
+      transition: transform 0.5s
+      z-index: 10
+      overflow: hidden
+      .nav__list 
+         display: block !important
+         flex-direction: column
+         text-align: center
+         li 
+            margin: 0 auto 30px
+      .nav__time
+         display: flex !important
+         justify-content: center
+         margin: 40px auto 20px
+      .btn
+         margin: 20px auto
+         .svg 
+            margin-left: 10px
+   .menu.active
+      transform: translateX(0)
+   .menu-btn.active 
+      width: 25px
+      height: 25px
+      overflow: visible
+      position: fixed
+      right: 30px
+      top: 57px
+      background: url(/img/burger2.svg) no-repeat
+   .menu-btn, .menu
+      display: block
+   .nav__time
+      display: none
+   .nav__list
+      display: none
+   .header 
+      .nav__box
+         flex-direction: column
+         align-items: flex-start
+      .nav__content .btn
+         margin-left: 0
+         margin-right: 10px
+      .nav__top
+         margin-top: 24px
+      .nav__content
+         width: 100%
+      .nav__phone
+         margin-left: auto !important
+         margin-right: 0 !important
+   .header__bottom
+      justify-content: center
+      flex-wrap: wrap
+   .header__el 
+      width: 34%
+      margin: 15px
+   .rev__yandex
+      width: 300px
+   .plus
+      padding-top: 70px
+   .plus__wrap
+      max-width: 430px
+   .del ul
+      max-width: 350px
+   .info__box
+      flex-direction: column
+   .info__content p:nth-child(1)
+      max-width: 100% 
+      margin-bottom: 20px
+   .info__content
+      max-width: 100% 
+      margin-bottom: 40px
+   .why h2
+      br 
+         display: none
+   .why__pic
+      display: none
+   .why__content
+      max-width: 100%
+   .why
+      padding-bottom: 70px
+   .item__flex
+      flex-direction: column
+   .item__pic 
+      margin-left: 0
+      position: relative
+      top: 0
+      margin: 0 auto
+   .item__content
+      max-width: 100%
+   .item__block
+      margin: 0 auto !important
+   .item__flex:nth-child(2)
+      flex-direction: column-reverse
+   .item__flex:nth-child(2) .item__pic 
+      order: 2
+      margin-right: 0
+      top: 0
+      margin: 0 auto 25px
+   .work
+      padding: 70px 0 30px
+   .work__box
+      flex-direction: column
+   .work__pic
+      left: 0
+   .work__content
+      max-width: 100%
+@media ( max-width: 991px )
+   input, textarea, select
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+   .header__content 
+      width: 100%
+      max-width: 100%
+      margin-top: 0
+   .header__box
+      flex-direction: column
+   .header__wrap
+      margin: 40px auto 0
+   .header__content ul
+      margin-bottom: 40px
+   .header__el
+      width: 45%
+   .calc h2
+      margin-bottom: 40px
+      br 
+         display: none
+   .rev__yandex 
+      width: 366px
+      position: relative
+      top: 0
+      margin-top: 40px
+   .plus__box
+      flex-direction: column
+   .plus__wrap
+      top: 0
+      max-width: 100%
+      margin-top: 30px
+   .plus__block .header__form
+      flex-direction: column
+   .plus__block
+      padding-top: 150px
+   .plus__block img
+      width: 25%
+   .plus__block p
+      br 
+         display: none
+   .plus__block .header__form input
+      margin: 0 auto 30px
+   .plus__block .header__form .header__button
+      margin: 0 auto
+   .del h2
+      font-size: 40px
+   .del__box
+      flex-direction: column 
+      align-items: center
+   .del__pic
+      position: relative
+      right: 0
+      top: 0
+      margin-right: 0
+      z-index: -1
+      margin: -20px auto
+   .del ul
+      max-width: 100%
+   .del
+      padding-bottom: 35px
+   .item__el
+      width: 31%
+      &:nth-child(n+10)
+        display: none 
+   .item h2
+      br 
+         display: none
+   h2 
+      font-size: 35px
+   .work h2
+      br 
+         display: none
+   .contacts
+      padding-top: 30px
+@media screen and (max-width: 767px)
+   .header__el
+      width: 100%
+      margin-bottom: 20px
+   .calc h2
+      font-size: 26px
+   .calc__flex 
+      flex-direction: column
+   .calc__one .calc__item
+      margin-right: 0
+      margin-bottom: 20px
+   .calc__btn, .calc__prev
+      width: 195px
+      height: 45px
+   .calc__sub
+      font-size: 14px
+   .calc__three .header__form
+      flex-direction: column
+   .calc__three .header__form input
+      width: 100%
+   .calc__four .header__form
+      flex-direction: column
+   .calc__four .header__form input
+      width: 100%
+   .plus__block img
+      width: 33%
+   .plus__block .header__form input
+      max-width: 100%
+   .plus__block .header__form .header__button
+      max-width: 100%
+      width: 100%
+   .del h2
+      font-size: 36px
+      margin-bottom: 40px
+   .info__top h2
+      font-size: 35px
+   h2 
+      font-size: 35px
+   .menu-btn2
+      top: 73%
+@media screen and (max-width: 576px)
+   button:active, button:focus 
+      outline: none
+   button::-moz-focus-inner 
+      border: 0
+   a:active, a:focus
+      outline: none
+   input, textarea
+      outline: none
+   input:active, textarea:active
+      outline: none
+   input:focusout
+      outline: none
+   .mob 
+      display: block
+   .nav__logo
+      img
+         width: 39px
+         height: 39px
+      p 
+         font-size: 11px
+         max-width: 100px
+         line-height: 120%
+         margin-left: 6px
+   .nav__box
+      padding: 15px 0
+   .menu-btn
+      right: 12px
+      top: 30px
+   .menu-btn.active
+      right: 25px
+      top: 33px
+   .menu .btn
+      width: 100%
+      font-size: 14px
+   .nav__tel
+      font-size: 14px
+      margin-left: 0
+   .header .nav__top
+      margin-top: 27px
+   .header .nav__phone 
+      margin-left: auto !important
+      margin-right: 0 !important
+      margin-top: -14px
+      width: 165px
+      padding: 0
+      height: 33px
+      font-size: 13px
+      .svg 
+         width: 14px
+   .btn 
+      font-size: 14px
+      height: 45px
+   h1 
+      font-size: 32px
+   .nav__bottom 
+      margin-top: 0px
+      justify-content: flex-end
+      margin-right: 17px
+   .popup-call__box
+      width: 100%
+      margin-left: 0
+      left: 0
+      padding: 40px  
+   .arcticmodal-container_i
+      width: 100%
+   .header__form input
+      height: 49px
+   .popup-call__box h2
+      font-size: 16px
+   .header__content ul
+      left: 4px
+      li
+         font-size: 14px
+         width: 97%
+         align-items: flex-start
+         &:before 
+            position: relative
+            top: 7px
+   .header__item
+      p
+         font-size: 16px
+      img 
+         width: 20px
+   .header__box
+      margin-top: 5px
+   .header__wrap
+      margin-top: 17px
+   .menu-btn2
+      top: 63%
+   .header__bottom
+      margin-top: 40px
+   .header__flex p
+      font-size: 18px
+      line-height: 116%
+   .header__text
+      font-size: 14px
+      line-height: 116%
+   .header__el
+      margin: 0 0 20px
+   .calc h2
+      font-size: 20px
+   .calc__box
+      padding: 20px
+   .header
+      padding-bottom: 40px
+   .calc__name 
+      color: #FFF
+      font-size: 16px
+      font-weight: 500
+      margin-bottom: 30px
+   .calc__one .custom-checkbox + label
+      font-size: 14px
+   .calc__one .calc__item img 
+      margin-right: 10px
+      width: 15%
+   .calc__one .calc__item
+      justify-content: center
+   .calc__bottom p 
+      font-size: 14px
+      font-weight: 500
+      margin: 0px 30px 0 0
+   .calc__btn, .calc__prev
+      width: 155px
+   .selectCF
+      width: 100%
+   .selectCF .titleCF
+      font-size: 12px
+      margin-top: 16px
+   .selectCF .arrowCF
+      right: 5px
+      top: 16px
+   .selectCF li ul li
+      font-size: 14px
+   .selectCF
+      height: 45px
+   .calc__four_button
+      width: 100%
+   .rev__arrows 
+      position: absolute
+      bottom: -6px
+      left: 50%
+      margin-left: -50px
+      z-index: 5
+   .rev 
+      padding: 30px 0 64px
+      h2 
+         font-size: 32px
+   .rev__yandex
+      width: 100%
+      padding: 20px
+   .rev .swiper2 .swiper-slide
+      margin-bottom: 30px
+   .rev .swiper-button-prev2
+      margin-left: 0
+   .plus h2
+      font-size: 32px
+   .plus__list li
+      font-size: 16px
+   .plus__item
+      width: 100%
+      margin: 0 0 30px
+      &:last-child
+         margin-bottom: 0
+   .plus__block img
+      width: 185px
+   .plus__block
+      margin-top: 72px
+      padding: 154px 30px 30px
+   .plus__block p
+      font-size: 20px
+   .del h2
+      font-size: 32px
+      text-align: left
+   .del ul li p
+      font-size: 14px
+   .del__pic
+      width: 332px
+   .info 
+      padding: 30px 0 110px
+      position: relative
+      &__box 
+         position: relative
+      .rev__arrows
+         bottom: 23px
+         margin-left: -75px
+      .swiper-button-prev3
+         margin-left: 0
+   .info h2
+      font-size: 32px
+   .info__content p
+      font-size: 14px
+   .info__box img
+      width: 100%
+      height: 223px
+   .info__box
+      margin-bottom: 80px
+   .info h2
+      line-height: 120%
+      font-size: 24px
+      br 
+         display: none
+   .info__sub
+      font-size: 14px
+   .info__data
+      font-size: 14px
+   .why h2
+      font-size: 24px
+      width: 93%
+   .why__name
+      font-size: 16px
+   .why__text
+      font-size: 14px
+   .item
+      padding-top: 40px
+   .item h2
+      text-align: left
+      font-size: 20px
+   .item__el
+      width: 43%
+   .item__el:nth-child(n+9)
+      display: none
+   .item__btn
+      width: 100%
+   .item__pic
+      width: 100%
+   .item__title
+      font-size: 21px
+      margin-bottom: 20px
+   .item__text
+      font-size: 16px
+      margin-bottom: 20px
+   .item__block
+      width: 100%
+      height: auto
+      padding: 20px
+      border-radius: 20px 
+      flex-direction: column
+      a 
+         height: 45px
+         width: 100%
+   .item .nav__what
+      height: 45px
+      width: 100%
+      margin-bottom: 20px
+   .box-modal__close
+      right: 5%
+   .thank__text
+      font-size: 14px
+      br 
+         display: none  
+   .work h2
+      font-size: 20px
+      text-align: left
+   .work__box
+      margin-top: 30px
+   .work__content
+      margin-top: 30px
+   .work__item
+      width: 100%
+      max-width: 266px
+      margin: 0 auto 30px
+      img 
+         width: 41px
+   .work__name
+      line-height: 130%
+      margin-bottom: 5px
+   .work__text 
+      font-size: 14px
+      line-height: 130%
+   .contacts h2
+      font-size: 20px
+      text-align: left
+      margin-bottom: 30px
+   #map 
+      height: 140px
+   .contacts__link
+      font-size: 14px
+      position: relative
+      bottom: 0
+      left: 50%
+      width: 310px 
+      margin-left: -155px
+      margin-top: 30px
+   .footer 
+      padding: 30px 0 110px
+      .nav__content .nav__what, .nav__content .nav__telegram
+         margin-top: 10px
+      .nav__content .btn
+         margin-left: 10px
+      .nav__box
+         align-items: flex-start
+         position: relative
+      .nav__top
+         flex-wrap: wrap
+         align-items: flex-end
+         justify-content: flex-end
+      .nav__tel 
+         position: absolute
+         bottom: -88px
+         left: 50%
+         margin-left: -67px
+   .footer .nav__phone 
+      margin: 50px auto 10px
+      position: absolute
+      left: 50%
+      width: 200px
+      margin-left: -100px !important
+      font-size: 14px
+      bottom: -70px
+// @media screen and (max-width: 350px)
+
