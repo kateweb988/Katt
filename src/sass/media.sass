@@ -9,9 +9,9 @@
       .svg 
          margin-left: 0
          width: 55%
-   .menu-btn2.active
-      right: 80px
-      height: 52px !important
+   // .menu-btn2.active
+   //    right: 80px
+   //    height: 52px !important
    .menu-btn 
       width: 33px
       height: 20px
@@ -135,6 +135,27 @@
       left: 0
    .work__content
       max-width: 100%
+   .nav-new
+      display: none
+   .item-new__box
+      flex-direction: column-reverse
+      align-items: center
+   .item-new__box p
+      max-width: 100%
+   .item-new__content
+      margin-top: 40px
+   .header__new
+      flex-direction: column
+   .header__block
+      margin: 19px auto 21px
+   .han__bottom
+      flex-direction: column
+   .han__num
+      margin: 0 auto 12px
+   .han__content
+      text-align: center
+   .han__btn
+      margin: 0 auto
 @media ( max-width: 991px )
    input, textarea, select
       -webkit-appearance: none
@@ -210,6 +231,28 @@
          display: none
    .contacts
       padding-top: 30px
+   .calc .calc__row
+      flex-direction: column
+      align-items: flex-start
+   .calc .calc__row .calc__flex
+      max-width: 100%
+      margin: 22px 0 20px
+   .calc .calc__row p 
+      margin-right: 0
+   .free__box
+      flex-direction: column
+   .free__pic 
+      width: 100%
+      margin-top: 60px
+   .free
+      padding-top: 34px 
+   .free__box
+      margin-top: 20px
+   .han__wrap p
+      font-size: 30px
+      margin-left: 409px
+   .han__text
+      font-size: 39px
 @media screen and (max-width: 767px)
    .header__el
       width: 100%
@@ -250,6 +293,13 @@
       font-size: 35px
    .menu-btn2
       top: 73%
+   .item-new__pic
+      width: 100%
+   .header__row
+      flex-direction: column
+   .header__area
+      margin-right: 0
+      margin-bottom: 20px
 @media screen and (max-width: 576px)
    button:active, button:focus 
       outline: none
@@ -322,13 +372,21 @@
       font-size: 16px
    .header__content ul
       left: 4px
+      width: 100%
+      max-width: 352px
       li
          font-size: 14px
-         width: 97%
+         width: 100%
          align-items: flex-start
+         position: relative
          &:before 
             position: relative
             top: 7px
+         &:nth-child(3)
+            span 
+               position: absolute
+               left: 44px
+               bottom: 0
    .header__item
       p
          font-size: 16px
@@ -339,7 +397,8 @@
    .header__wrap
       margin-top: 17px
    .menu-btn2
-      top: 63%
+      bottom: 6%
+      top: inherit
    .header__bottom
       margin-top: 40px
    .header__flex p
@@ -350,6 +409,7 @@
       line-height: 116%
    .header__el
       margin: 0 0 20px
+      min-height: auto
    .calc h2
       font-size: 20px
    .calc__box
@@ -560,5 +620,135 @@
       margin-left: -100px !important
       font-size: 14px
       bottom: -70px
-// @media screen and (max-width: 350px)
+   .menu2
+      width: 70%
+      padding: 40% 20px 40px
+      z-index: 13
+   .menu-btn2
+      width: 50px
+      height: 50px
+      .svg 
+         width: 23px
+   .item-new__btn
+      width: 100%
+   .item-new__box p
+      font-size: 14px
+   .item-new__box h2
+      font-size: 24px !important
+      br 
+         display: block !important
+   .item-new
+      padding: 70px 0
+   .item-new__pic
+      display: none
+   .item-new__pic2 
+      width: 100%
+      display: block
+      margin: 40px 0
+   .item-new__content
+      margin-top: 0
+   .calc__one .custom-checkbox + label
+      min-width: auto
+      margin-right: 0
+      margin-bottom: 10px
+      line-height: normal
+   .calc__one .calc__item
+      margin-bottom: 10px
+   .calc__one 
+      .custom-checkbox + label::before
+         margin: 0
+         margin-right: 10px
+      .calc__name
+         margin-bottom: 10px
+   .calc__txt
+      font-size: 14px
+   .calc .header__form input
+      width: 100%
+   .calc__buttons 
+      width: 100%
+      .btn 
+         width: 48.5%
+   .calc__three 
+      .custom-checkbox + label
+         br 
+            display: none
+      .calc__row .calc__flex
+         margin-bottom: 10px
+   .calc__four .calc__prev
+      width: 300px
+   .calc__four .calc__name
+      font-size: 17px
+      max-width: 306px
+      br 
+        display: none
+   .calc__right
+      margin-left: 20px
+   .header h1
+      font-size: 24px
+      br 
+         display: none
+   .header__new
+      margin-top: 40px
+   .header__area
+      width: 100%
+      max-width: 304px
+   .header__row
+      width: 100%
+   .header__top
+      justify-content: center
+   .header__stars
+      margin: 0 10px
+   .free h2
+      font-size: 32px
+   .han .box-modal__close
+      width: 26px
+      height: 26px
+      right: 5%
+   .han__sub
+      font-size: 21px
+      line-height: normal
+      margin-bottom: 15px
+   .han .popup-call__box
+      padding: 90px 30px
+   .han__block
+      width: 156.414px
+      height: 48.276px
+      font-size: 21px
+      margin-bottom: 50px
+   .han .popup__wrap
+      max-width: 280px
+   .han__wrap
+      height: 86.897px
+      p 
+         font-size: 14px
+         line-height: normal
+         margin-left: 144px
+         margin-right: 20px
+      img 
+         left: -54px
+         top: -28px
+         width: 236px
+   .han__num
+      font-size: 22px
+      width: 76.759px
+      height: 76.759px
+   .han__one
+      font-size: 14px
+      margin-bottom: 8px
+   .han__text
+      font-size: 14px
+      margin-bottom: 20px
+   .han__btn
+      width: 100%
+      height: 81px
+      font-size: 18px
+   .han__bottom, .han__content
+      width: 100%
+   .han__bottom
+      margin-top: 30px
+   .han .popup-call__box
+      margin-top: -370px
+@media screen and (max-width: 370px)
+   .header__content ul li
+      font-size: 13px
 

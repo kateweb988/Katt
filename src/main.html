@@ -38,6 +38,17 @@
 		<div class="menu-btn2">
 			<img src="/img/a2.svg" alt="" class="svg">
 		</div>
+		<div class="menu2">
+			<p>
+				Впишите Ваш номер телефона!
+			</p>
+			<form action="success.php" class="header__form js-form" id="popupResult" method="post">
+				<input type="tel" name="tel" required="" placeholder="Номер телефона" class="order__input tel form__field">
+				<button class="header__button btn" data-submit>
+					Отправить
+				</button>
+			</form>
+		</div>
 		<header class="header" id="header">
 			<nav class="nav">
 				<div class="container">
@@ -86,9 +97,22 @@
 											О нас
 										</a>
 									</li>
+									<li>
+										<a href="#">
+											Почему бесплатно?
+										</a>
+									</li>
 								</ul>
 								<a href="tel:+79104420505" class="nav__tel">
 									+7 (910) 442-05-05
+								</a>
+							</div>
+							<div class="nav-new d-flex">
+								<a href="#">
+									Установка катализатора
+								</a>
+								<a href="#">
+									Удаление катализатора
 								</a>
 							</div>
 						</div>
@@ -114,6 +138,21 @@
 							О нас
 						</a>
 					</li>
+					<li>
+						<a href="#">
+							Установка катализатора
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Удаление катализатора
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Почему бесплатно?
+						</a>
+					</li>
 				</ul>
 				<div class="nav__time d-flex">
 					<img src="/img/a1.svg" alt="">
@@ -134,23 +173,20 @@
 					<img src="/img/header.png" alt="" class="header__pic">
 					<div class="header__content">
 						<h1>
-							БЕСПЛАТНО
+							Удаление катализаторов бесплатно на любых авто <br> по авторской методике
 						</h1>
 						<ul>
 							<li>
-								Удаляем катализатор
+								Установка пламегасителя <span>БЕСПЛАТНО</span>
 							</li>
 							<li>
-								Устанавливаем пламегаситель
+								Прошивка ЕВРО-2 <span> В ПОДАРОК</span>
 							</li>
 							<li>
-								Делаем прошивку ЕВРО-2
+								Чип-тюнинг (повышает мощность авто до 15%) <br class="mob"> <span> БЕСПЛАТНО</span>
 							</li>
 							<li>
-								Чип-тюнинг (повышает мощность авто до 15%)
-							</li>
-							<li>
-								Доплата Вам до 120.000 руб.
+								Доплата за катализатор <span> ВАМ ДО 150.000 р. </span>
 							</li>
 						</ul>
 						<div class="header__item d-flex">
@@ -181,6 +217,68 @@
 								Отправить на расчет
 							</button>
 						</form>
+					</div>
+				</div>
+				<div class="header__new q">
+					<img src="/img/new1.png" alt="" class="header__logo">
+					<div class="header__block q">
+						Заслужили доверие и <br> получили высокий рейтинг <br> в независимых источниках
+					</div>
+					<div class="header__row q">
+						<div class="header__area">
+							<div class="header__top q">
+								<img src="/img/new1.svg" alt="" class="header__icon">
+								<div class="header__stars q">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+								</div>
+								<p class="header__num">
+									5,0 <span>/5</span>
+								</p>
+							</div>
+							<div class="header__rate q">
+								Рейтинг организации в Яндексе
+							</div>
+						</div>
+						<div class="header__area">
+							<div class="header__top q">
+								<img src="/img/new2.svg" alt="" class="header__icon">
+								<div class="header__stars q">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+								</div>
+								<p class="header__num">
+									5,0 <span>/5</span>
+								</p>
+							</div>
+							<div class="header__rate q">
+								Рейтинг организации в Google
+							</div>
+						</div>
+						<div class="header__area">
+							<div class="header__top q">
+								<img src="/img/new3.svg" alt="" class="header__icon">
+								<div class="header__stars q">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+									<img src="/img/star3.svg" alt="">
+								</div>
+								<p class="header__num">
+									5,0 <span>/5</span>
+								</p>
+							</div>
+							<div class="header__rate q">
+								Рейтинг организации в 2GIS
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="header__bottom d-flex">
@@ -228,38 +326,55 @@
 				<div class="calc__box">
 					<img src="/img/calc.png" alt="" class="calc__bg">
 					<h2>
-						Получи самые выгодные условия на свой <br>
-						катализатор <span> ответь всего на 4 вопроса</span>
+						<span>Ответьте на 3 вопроса и получите</span> лучшее <br> предложение <span>+ бесплатную замену
+							масла</span>
 					</h2>
 					<form action="success.php" class="calc__form js-form" id="popupResult" method="post">
 						<div class="calc__elem calc__one">
 							<p class="calc__name">
-								· Ты хочешь продать или удалить катализатор?
+								Какие услуги потребуются?
+							</p>
+							<p class="calc__txt">
+								Вы можете выбрать несколько вариантов
 							</p>
 							<div class="calc__flex d-flex">
 								<div class="calc__item">
-									<img src="/img/b4.svg" alt="">
-									<input class="form-check-input custom-checkbox" type="radio" name="formKitchen" id="form1"
-										value="Я хочу продать катализатор">
+									<input class="form-check-input custom-checkbox" type="checkbox" name="formKitchen" id="form1"
+										value="Удаление катализатора">
 									<label class="form-check-label " for="form1">
-										Я хочу <span> продать </span><br>
-										катализатор
+										Удаление катализатора
 									</label>
 								</div>
 								<div class="calc__item">
-									<img src="/img/b5.svg" alt="">
-									<input class="form-check-input custom-checkbox" type="radio" name="formKitchen" id="form2"
-										value="Я хочу удалить катализатор">
+									<input class="form-check-input custom-checkbox" type="checkbox" name="formKitchen" id="form2"
+										value="Выкуп катализатора">
 									<label class="form-check-label " for="form2">
-										Я хочу <span>удалить</span> <br>
-										катализатор
+										Выкуп катализатора
+									</label>
+								</div>
+								<div class="calc__item">
+									<input class="form-check-input custom-checkbox" type="checkbox" name="formKitchen" id="form3"
+										value="Чип-тюнинг">
+									<label class="form-check-label " for="form3">
+										Чип-тюнинг
+									</label>
+								</div>
+								<div class="calc__item">
+									<input class="form-check-input custom-checkbox" type="checkbox" name="formKitchen" id="form4"
+										value="Установка пламегасителя">
+									<label class="form-check-label " for="form4">
+										Установка пламегасителя
+									</label>
+								</div>
+								<div class="calc__item">
+									<input class="form-check-input custom-checkbox" type="checkbox" name="formKitchen" id="form5"
+										value="Установка катализатора">
+									<label class="form-check-label " for="form5">
+										Установка катализатора
 									</label>
 								</div>
 							</div>
 							<div class="calc__bottom d-flex">
-								<p class="calc__choose">
-									Выбери ответ и нажми
-								</p>
 								<div class="calc__buttons d-flex">
 									<div class="calc__prev btn" style="display: none;">
 										<img src="/img/arr.svg" alt="" class="svg"> Назад
@@ -275,30 +390,19 @@
 						</div>
 						<div class="calc__elem calc__two" style="display: none;">
 							<p class="calc__name">
-								· Ты хочешь продать или удалить катализатор?
+								Пожалуйста, укажите данные вашего автомобиля
 							</p>
-							<div class="def__select">
-								<div id="wapper">
-									<div class="style1">
-										<select class="select">
-											<option value="1">Сварочные работы по автомобилям</option>
-											<option value="2">Ремонт глушителя</option>
-											<option value="3">Замена резонатора</option>
-											<option value="3">Замена банки глушителя</option>
-											<option value="3">Замена фланца</option>
-											<option value="3">Замена демпфера</option>
-											<option value="3">Замена графитового кольца глушителя</option>
-											<option value="3">Замена части выхлопной системы (трассы)</option>
-											<option value="3">Замена катализатора на пламегаситель</option>
-										</select>
-									</div>
-									<div id="event-change"></div>
-								</div>
+							<div class="header__form d-flex">
+								<input type="text" name="model" required="" placeholder="Марка и модель авто"
+									class="order__input form__field">
+								<input type="text" name="year" required="" placeholder="Год выпуска"
+									class="order__input form__field">
+								<input type="text" name="info1" required="" placeholder="Пробег"
+									class="order__input form__field">
+								<input type="text" name="info2" required="" placeholder="Объем двигателя"
+									class="order__input form__field">
 							</div>
 							<div class="calc__bottom d-flex">
-								<p class="calc__choose">
-									Выбери ответ и нажми
-								</p>
 								<div class="calc__buttons d-flex">
 									<div class="calc__prev btn">
 										<img src="/img/arr.svg" alt="" class="svg"> Назад
@@ -314,26 +418,47 @@
 						</div>
 						<div class="calc__elem calc__three" style="display: none;">
 							<p class="calc__name">
-								· Пожалуйста, укажите данные вашего автомобиля:
+								Укажите Ваши контактные данные для предоставления расчёта
 							</p>
 							<div class="header__form d-flex">
-								<input type="text" name="model" required="" placeholder="Марка авто"
-									class="order__input form__field">
-								<input type="text" name="year" required="" placeholder="Пробег"
-									class="order__input form__field">
-								<input type="text" name="year" required="" placeholder="Пробег"
-									class="order__input form__field">
+								<input type="text" name="name" required="" placeholder="Имя" class="order__input form__field">
+								<input type="tel" name="tel" required="" placeholder="Телефон"
+									class="order__input tel form__field">
+							</div>
+							<div class="calc__row q">
+								<p>
+									Как Вам удобно получить <br> результаты расчета?
+								</p>
+								<div class="calc__flex d-flex">
+									<div class="calc__item">
+										<input class="form-check-input custom-checkbox" type="radio" name="formKitchen"
+											id="form11" value="Звонок">
+										<label class="form-check-label " for="form11">
+											Звонок
+										</label>
+									</div>
+									<div class="calc__item">
+										<input class="form-check-input custom-checkbox" type="radio" name="formKitchen"
+											id="form12" value="WhatsApp">
+										<label class="form-check-label " for="form12">
+											Сообщение <br> в WhatsApp
+										</label>
+									</div>
+									<div class="calc__item">
+										<input class="form-check-input custom-checkbox" type="radio" name="formKitchen"
+											id="form13" value="Telegram">
+										<label class="form-check-label " for="form13">
+											Сообщение <br> в Telegram
+										</label>
+									</div>
+								</div>
 							</div>
 							<div class="calc__bottom d-flex">
-								<p class="calc__choose">
-									Выбери ответ и нажми
-								</p>
 								<div class="calc__buttons d-flex">
 									<div class="calc__prev btn">
 										<img src="/img/arr.svg" alt="" class="svg"> Назад
 									</div>
-									<button class="calc__btn calc__btn_three btn">Далее <img src="/img/arr.svg" alt=""
-											class="svg"></button>
+									<button class="calc__btn calc__btn_three btn">Получить рассчёт</button>
 								</div>
 							</div>
 							<p class="calc__sub">
@@ -342,30 +467,25 @@
 							</p>
 						</div>
 						<div class="calc__elem calc__four" style="display: none;">
-							<div class="header__form  d-flex">
-								<input type="text" name="name" required="" placeholder="Имя" class="order__input form__field">
-								<input type="tel" name="tel" required="" placeholder="+7 (---) --- -- --"
-									class="order__input tel form__field">
-								<!-- <div id="wapper">
-									<div class="style1">
-										<select class="select">
-											<option value="1">Ул. 9 Соколиной горы 8с8</option>
-											<option value="2">Ул. 9 Парковая</option>
-											<option value="3">Ул. Нижние поля 29с1</option>
-										</select>
-									</div>
-									<div id="event-change"></div>
-								</div> -->
-							</div>
-							<div class="calc__buttons d-flex">
-								<div class="calc__prev btn">
-									<img src="/img/arr.svg" alt="" class="svg"> Назад
-								</div>
-								<button class="calc__four_button btn d-flex" data-submit>
-									<p>
-										Получить просчёт
+							<p class="calc__name">
+								Спасибо за заявку, мы свяжемся с вами <br>
+								в ближайшее время
+							</p>
+							<div class="calc__block q">
+								<img src="/img/new.svg" alt="">
+								<div class="calc__right">
+									<p class="calc__title">
+										Вам подарок:
 									</p>
-								</button>
+									<p class="calc__free">
+										бесплатная замена масла в вашем авто
+									</p>
+								</div>
+							</div>
+							<div class="calc__buttons">
+								<div class="calc__prev btn">
+									<img src="/img/arr.svg" alt="" class="svg"> Вернуться в начало
+								</div>
 							</div>
 						</div>
 					</form>
@@ -727,6 +847,27 @@
 					</div>
 				</div>
 		</section>
+		<section class="free" id="free">
+			<div class="container">
+				<h2>
+					Почему <span> бесплатно</span>, да еще <br class="mob"> и <span> с выгодной доплатой?</span>
+				</h2>
+				<div class="free__box">
+					<div class="free__content">
+						<p>
+							Нам действительно выгодно выкупить Ваш катализатор дорого, потому что мы напрямую сотрудничаем с
+							заводами по утилизации и переработке такого рода отходов и получаем свою выгоду именно от них.
+						</p>
+						<p>
+							Наше с Вами сотрудничество получается <span>взаимовыгодным.</span> <br>
+							В наших интересах, чтобы Вы остались довольны работой, так как являемся не конторой «однодневкой»,
+							а заинтересованы в накоплении клиентской базы и поддержке репутации на высоком уровне.
+						</p>
+					</div>
+					<img src="/img/new2.png" alt="" class="free__pic">
+				</div>
+			</div>
+		</section>
 		<section class="plus" id="plus">
 			<div class="container">
 				<h2>
@@ -915,7 +1056,7 @@
 							работы, т.к. уверены в высоком качестве оказываемых услуг
 						</p>
 						<p>
-							<span>Наша работа полностью бесплатна и выгодна для Вас, потому что</span>
+							<span>Наша работа полностью бесплатна и выгодна для Вас, потому что</span> <br>
 							Благодаря прямому сотрудничеству с заводами по утилизации и переработке отходов, снятые
 							катализаторы мы утилизируем и получаем за это выгодные дотации по специальной программе,
 							компенсируя стоимость работ
@@ -1206,6 +1347,35 @@
 				<a href="#" class="item__btn btn">
 					Узнать стоимость своего катализатора
 				</a>
+			</div>
+			<div class="item-new">
+				<div class="container">
+					<div class="item-new__box d-flex">
+						<div class="item-new__content">
+							<h2>
+								<span> Установим катализатор </span> <br>на любую машину
+							</h2>
+							<img src="/img/new.png" alt="" class="item-new__pic2">
+							<p>
+								Мы специализируемся на установке катализаторов <span> на любые автомобили</span>. Наша команда
+								профессионалов
+								имеет богатый опыт в установке катализаторов. Мы заботимся о вашем комфорте и работаем быстро и
+								качественно, чтобы вы могли максимально быстро вернуться на дорогу.
+							</p>
+							<p>
+								Мы предлагаем широкий выбор катализаторов высокого качества, которые соответствуют всем
+								соответствующим нормам и требованиям. Все наши катализаторы поставляются от проверенных и
+								надежных производителей, что гарантирует их надежность и долговечность.
+							</p>
+							<a href="#" class="item-new__btn btn">
+								Оставить заявку
+							</a>
+						</div>
+						<img src="/img/new.png" alt="" class="item-new__pic">
+					</div>
+				</div>
+			</div>
+			<div class="container">
 				<h2>
 					Бесплатно удалим катализатор, установим <br>
 					прошивку ЕВРО-2, доплатим деньги
@@ -1407,6 +1577,47 @@
 								Отправить
 							</button>
 						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="display:none;">
+			<div class="box-modal han" id="popup-call2">
+				<div class="popup-call__box">
+					<div class="box-modal__close articmodal-close">
+						<img src="/img/han.svg" alt="" class="svg">
+					</div>
+					<img src="/img/han1.png" alt="" class="han__bg">
+					<div class="popup__wrap">
+						<div class="han__sub">
+							Удаление катализатора <br>
+							Прошивка под ЕВРО 2
+						</div>
+						<div class="han__block q">
+							+ STAGE 1
+						</div>
+						<div class="han__wrap">
+							<img src="/img/han2.png" alt="">
+							<p>
+								Замена масла в подарок!
+							</p>
+						</div>
+						<div class="han__bottom q">
+							<div class="han__num q">
+								+20%
+							</div>
+							<div class="han__content">
+								<p class="han__one">
+									Доплата с нашей стороны
+								</p>
+								<p class="han__text">
+									С наступающим новым годом!
+								</p>
+								<a href="#" class="han__btn btn">
+									Отправить на расчет
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

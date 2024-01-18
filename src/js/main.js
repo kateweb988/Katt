@@ -35,6 +35,22 @@ window.addEventListener("DOMContentLoaded", function () {
 
 });
 document.addEventListener("DOMContentLoaded", () => {
+  let menuBtn = document.querySelector('.menu-btn');
+  let menu = document.querySelector('.menu');
+  menuBtn.addEventListener('click', function () {
+    menuBtn.classList.toggle('active');
+    menu.classList.toggle('active');
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  let menuBtn2 = document.querySelector('.menu-btn2');
+  let menu2 = document.querySelector('.menu2');
+  menuBtn2.addEventListener('click', function () {
+    menuBtn2.classList.toggle('active');
+    menu2.classList.toggle('active');
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
   // Scroll
   $('.go_to').click(function () { // ловим клик по ссылке с классом go_to
     var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
@@ -359,7 +375,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $('.calc__four .calc__prev').click(function (event) {
     $('.calc__four').css('display', 'none');
-    $('.calc__three').fadeIn();
+    $('.calc__one').fadeIn();
     return false;
   });
 
@@ -460,26 +476,15 @@ document.addEventListener('DOMContentLoaded', function () {
     $.arcticmodal('close');
 
   });
-  $('.item__link, .nav__phone').click(function (e) {
+  $('.item__link, .nav__phone, .item-new__btn').click(function (e) {
     e.preventDefault();
     $('#popup-call').arcticmodal({
     });
   });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  let menuBtn = document.querySelector('.menu-btn');
-  let menu = document.querySelector('.menu');
-  menuBtn.addEventListener('click', function () {
-    menuBtn.classList.toggle('active');
-    menu.classList.toggle('active');
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  let menuBtn2 = document.querySelector('.menu-btn2');
-  let menu2 = document.querySelector('.menu2');
-  menuBtn2.addEventListener('click', function () {
-    menuBtn2.classList.toggle('active');
-    menu2.classList.toggle('active');
+  $('.item__btn').click(function (e) {
+    e.preventDefault();
+    $('#popup-call2').arcticmodal({
+    });
   });
 });
 document.addEventListener("DOMContentLoaded", () => {
