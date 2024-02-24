@@ -422,7 +422,7 @@ input:-moz-placeholder {
   border-radius: 4px; }
 
 .custom-checkbox:checked + label::before {
-  background: url(../img/check.svg) no-repeat center center;
+  background: url(/img/check.svg) no-repeat center center;
   background-color: white; }
 
 .menu-btn2 {
@@ -474,7 +474,7 @@ input:-moz-placeholder {
     -ms-transform: rotate(10deg); } }
 
 .menu-btn2.active {
-  background: url(../img/burger2.svg) no-repeat;
+  background: url(/img/burger2.svg) no-repeat;
   width: 25px;
   height: 25px;
   border: none;
@@ -579,7 +579,7 @@ input:-moz-placeholder {
   height: 15px;
   text-align: center;
   vertical-align: top;
-  background: url(../img/down.svg) no-repeat !important;
+  background: url(/img/down.svg) no-repeat !important;
   position: absolute;
   right: 20px;
   top: 20px; }
@@ -745,19 +745,21 @@ input:-moz-placeholder {
     line-height: 18px;
     margin-left: 4.5px; }
 
-.nav__content .btn {
-  width: max-content;
-  padding: 0 20px;
-  margin-left: 22px;
-  border-radius: 20px;
-  height: 40px;
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 500; }
-  .nav__content .btn:after, .nav__content .btn::before {
-    display: none; }
-  .nav__content .btn .svg {
-    margin-left: 10px; }
+.nav__content {
+  position: relative; }
+  .nav__content .btn {
+    width: max-content;
+    padding: 0 20px;
+    margin-left: 28px;
+    border-radius: 20px;
+    height: 40px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500; }
+    .nav__content .btn:after, .nav__content .btn::before {
+      display: none; }
+    .nav__content .btn .svg {
+      margin-left: 10px; }
 
 .nav__what {
   background: #25BB18;
@@ -794,7 +796,7 @@ input:-moz-placeholder {
   color: #FFF;
   font-size: 20px;
   font-weight: 600;
-  margin-left: 43px; }
+  margin-left: 125px; }
   .nav__tel:hover {
     color: #EB4C37 !important; }
 
@@ -813,7 +815,7 @@ input:-moz-placeholder {
       color: #EB4C37 !important; }
 
 .nav-new {
-  margin: 14px 304px 0 auto;
+  margin: 14px 269px 0 auto;
   justify-content: flex-end; }
   .nav-new a {
     font-size: 16px;
@@ -827,6 +829,13 @@ input:-moz-placeholder {
     margin-right: 40px; }
     .nav-new a:last-child {
       margin-right: 0; }
+
+.nav__add {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 18px; }
 
 .header {
   padding-bottom: 100px; }
@@ -1195,6 +1204,12 @@ input:-moz-placeholder {
         font-weight: 700; }
       .free__content p:last-child {
         margin-bottom: 0; }
+      .free__content p .bol {
+        background: initial;
+        background-clip: initial;
+        color: white;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial; }
 
 .rev {
   padding: 50px 0  0;
@@ -1327,7 +1342,7 @@ input:-moz-placeholder {
       margin-right: 10px;
       flex: 1 0 auto;
       max-width: 15px;
-      background: url(../img/icon.svg) no-repeat; }
+      background: url(/img/icon.svg) no-repeat; }
     .plus__list li:last-child {
       margin-bottom: 0; }
   .plus__wrap {
@@ -1642,6 +1657,30 @@ input:-moz-placeholder {
     .item-new__btn {
       z-index: 2;
       margin-top: 35px; }
+    .item-new__row {
+      margin-bottom: 30px; }
+    .item-new__block {
+      border: 1px solid #FBAB3B;
+      width: max-content;
+      height: 58px;
+      padding: 0 30px;
+      margin-right: 30px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px; }
+      .item-new__block:last-child {
+        margin-right: 0; }
+      .item-new__block p {
+        background: linear-gradient(180deg, #FBAB3B 0%, #EB4C37 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 600;
+        font-size: 18px;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0; }
+    .item-new__span {
+      font-size: 16px !important;
+      font-weight: 700 !important; }
   .item h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -1727,6 +1766,9 @@ input:-moz-placeholder {
         order: 1; }
       .item__flex:nth-child(2) .item__block {
         margin: 0; }
+
+.q {
+  display: flex; }
 
 .work {
   padding: 2px 0  50px;
@@ -1861,7 +1903,7 @@ input:-moz-placeholder {
   margin-left: -235px;
   height: auto;
   padding: 50px;
-  background: url(../img/popup.png) no-repeat center center/cover;
+  background: url(/img/popup.png) no-repeat center center/cover;
   border-radius: 20px;
   overflow: hidden; }
   .popup-call__box h2 {
@@ -2030,7 +2072,7 @@ input:-moz-placeholder {
     top: 56px;
     z-index: 11;
     overflow: hidden;
-    background: url(../img/burger.svg) no-repeat; }
+    background: url(/img/burger.svg) no-repeat; }
   .menu {
     position: fixed;
     top: 0;
@@ -2067,7 +2109,7 @@ input:-moz-placeholder {
     position: fixed;
     right: 30px;
     top: 57px;
-    background: url(../img/burger2.svg) no-repeat; }
+    background: url(/img/burger2.svg) no-repeat; }
   .menu-btn, .menu {
     display: block; }
   .nav__time {
@@ -2163,7 +2205,16 @@ input:-moz-placeholder {
   .han__content {
     text-align: center; }
   .han__btn {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .nav__add {
+    left: 250px;
+    bottom: inherit;
+    right: inherit;
+    top: -59px; }
+  .header__content ul li {
+    font-size: 16px; }
+  .header__item p {
+    font-size: 18px; } }
 
 @media (max-width: 991px) {
   input, textarea, select {
@@ -2346,7 +2397,7 @@ input:-moz-placeholder {
     font-size: 14px;
     margin-left: 0; }
   .header .nav__top {
-    margin-top: 27px; }
+    margin-top: 32px; }
   .header .nav__phone {
     margin-left: auto !important;
     margin-right: 0 !important;
@@ -2749,8 +2800,38 @@ input:-moz-placeholder {
   .han__bottom {
     margin-top: 30px; }
   .han .popup-call__box {
-    margin-top: -370px; } }
+    margin-top: -370px; }
+  .nav__add {
+    left: 145px;
+    bottom: inherit;
+    right: inherit;
+    top: -32px;
+    font-size: 11px;
+    line-height: 13.5px; }
+  .item-new__row {
+    flex-direction: column;
+    margin-bottom: 20px; }
+  .item-new__block {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px; }
+    .item-new__block p {
+      font-size: 14px;
+      text-align: center; } }
 
 @media screen and (max-width: 370px) {
   .header__content ul li {
-    font-size: 13px; } }
+    font-size: 12px; }
+  .nav__add {
+    left: 141px;
+    top: -28px;
+    font-size: 8px;
+    line-height: 11.5px; }
+  .nav__logo p {
+    font-size: 9px;
+    max-width: 75px;
+    margin-left: 6px; }
+  .menu {
+    width: 100%; }
+  .header__item p {
+    font-size: 14px; } }

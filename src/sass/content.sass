@@ -333,10 +333,11 @@ input:-moz-placeholder
          line-height: 18px
          margin-left: 4.5px
    &__content 
+      position: relative
       .btn 
          width: max-content
          padding: 0 20px
-         margin-left: 22px
+         margin-left: 28px
          border-radius: 20px
          height: 40px
          color: #FFF
@@ -380,7 +381,7 @@ input:-moz-placeholder
       color: #FFF
       font-size: 20px
       font-weight: 600
-      margin-left: 43px
+      margin-left: 125px
       &:hover 
          color: $or !important
    &__list 
@@ -398,7 +399,7 @@ input:-moz-placeholder
             a 
                color: $or !important
    &-new 
-      margin: 14px 304px 0 auto
+      margin: 14px 269px 0 auto
       justify-content: flex-end
       a 
          font-size: 16px
@@ -412,6 +413,12 @@ input:-moz-placeholder
          margin-right: 40px
          &:last-child
             margin-right: 0
+   &__add
+      position: absolute
+      left: 0
+      bottom: 0
+      font-size: 12px
+      line-height: 18px
 .header
    padding-bottom: 100px
    .q 
@@ -782,6 +789,12 @@ input:-moz-placeholder
             font-weight: 700
          &:last-child
             margin-bottom: 0
+         .bol 
+            background: initial
+            background-clip: initial 
+            color: white
+            -webkit-background-clip: initial 
+            -webkit-text-fill-color: initial 
 .rev 
    padding: 50px 0  0
    background: #F9F9F9
@@ -1232,6 +1245,30 @@ input:-moz-placeholder
       &__btn 
          z-index: 2
          margin-top: 35px
+      &__row 
+         margin-bottom: 30px
+      &__block 
+         border: 1px solid #FBAB3B
+         width: max-content
+         height: 58px
+         padding: 0 30px
+         margin-right: 30px
+         align-items: center
+         justify-content: center
+         border-radius: 10px
+         &:last-child
+            margin-right: 0
+         p 
+            background: linear-gradient(180deg, #FBAB3B 0%, #EB4C37 100%);
+            background-clip: text;
+            -webkit-background-clip: text
+            font-weight: 600
+            font-size: 18px
+            -webkit-text-fill-color: transparent
+            margin-bottom: 0
+      &__span 
+         font-size: 16px !important
+         font-weight: 700 !important
    h2 
       text-align: center
       margin-bottom: 40px
@@ -1317,6 +1354,8 @@ input:-moz-placeholder
             order: 1
          .item__block 
             margin: 0
+.q 
+   display: flex
 .work 
    padding: 2px 0  50px
    background: #F9F9F9
